@@ -1,0 +1,222 @@
+<html>
+	<style>
+		body, html {
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			font-family: Segoe UI,Roboto,sans-serif
+		}
+		.logo-text {
+			font-family: Times New Roman, Times, serif;
+			font-size: 200px;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.splash {
+			max-width: none;
+			width: 100%;
+			text-align: center;
+			background-color: #f3e5ab;
+			background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMCIgd2lkdGg9Ijg1NSIgaGVpZ2h0PSI3NjgiIG9wYWNpdHk9IjAuMjUiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KCTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbDQoJCXRleHQge2ZvbnQtZmFtaWx5OiBBcmlhbDsgZm9udC1zaXplOiAxMDBweH0NCgkJLnNtYWxsIHtmb250LXNpemU6IDc1cHh9DQoJXV0+PC9zdHlsZT4NCgk8Zz4NCgkJPHBvbHlnb24gcG9pbnRzPSI0ODIsMjY0LjggNDg2LDI2Mi4zIDQ5MCwyNjQuOCA0OTAsNDA4LjggNDgyLDQwMy44IDQ4MiwyNjQuOCIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjM2MSwxOTQuOCAzNjEsMTg1LjggNDg2LDI1Ny44IDQ4NiwyNjIuMyA0ODIsMjY0LjggMzYxLDE5NC44Ii8+DQoJCTxwb2x5Z29uIHBvaW50cz0iMjQwLjUsMjY0LjggMjMyLjUsMjU5LjggMzYxLDE4NS44IDM2MSwxOTQuOCAyNDAuNSwyNjQuOCIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjI0MC41LDQwMy44IDIzNi41LDQwNi4zIDIzMi41LDQwMy44IDIzMi41LDI1OS44IDI0MC41LDI2NC44IDI0MC41LDQwMy44Ii8+DQoJCTxwb2x5Z29uIHBvaW50cz0iMzYxLDQ3My44IDM2MSw0NzguMyAzNTcsNDgwLjggMjM2LjUsNDEwLjggMjM2LjUsNDA2LjMgMjQwLjUsNDAzLjggMzYxLDQ3My44Ii8+DQoJCTxwb2x5Z29uIHBvaW50cz0iNDgyLDQwMy44IDQ5MCw0MDguOCAzNjUsNDgwLjggMzYxLDQ3OC4zIDM2MSw0NzMuOCA0ODIsNDAzLjgiLz4NCgkJPHBvbHlnb24gcG9pbnRzPSI2MTAsMTg1LjggNjEwLDE5NS4zIDQ5MCwyNjQuOCA0ODYsMjYyLjMgNDg2LDI1Ny44IDYxMCwxODUuOCIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjY5MSwyMzIuOCA2ODcsMjM5LjggNjEwLDE5NS4zIDYxMCwxODUuOCA2OTEsMjMyLjgiLz4NCgkJPHBvbHlnb24gcG9pbnRzPSIxNTIuNSw0NTkuMyAxNDguNSw0NTIuMyAyMzIuNSw0MDMuOCAyMzYuNSw0MDYuMyAyMzYuNSw0MTAuOCAxNTIuNSw0NTkuMyIvPg0KCQk8cG9seWdvbiBwb2ludHM9IjM2NSw1NzYuMyAzNTcsNTc2LjMgMzU3LDQ4MC44IDM2MSw0NzguMyAzNjUsNDgwLjggMzY1LDU3Ni4zIi8+DQoJCTxyZWN0IHdpZHRoPSI4IiBoZWlnaHQ9IjExNCIgeD0iNDU2IiB5PSIyNzcuMyIvPg0KCQk8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSIxMTQiIHg9IjMwNy43IiB5PSIxOTEuOSIgdHJhbnNmb3JtPSJtYXRyaXgoMC40OTYyLDAuODY4MiwtMC44NjgyLDAuNDk2MiwzNzMuMDY1NywtMTQ1LjMxNzMpIi8+DQoJCTxyZWN0IHdpZHRoPSI4IiBoZWlnaHQ9IjExNCIgeD0iMzA3LjciIHk9IjM2Mi45IiB0cmFuc2Zvcm09Im1hdHJpeCgwLjQ5NTksLTAuODY4NCwwLjg2ODQsMC40OTU5LC0yMDcuMzk0Nyw0ODIuMzA5MikiLz4NCgkJPHJlY3Qgd2lkdGg9IjgiIGhlaWdodD0iOTkuNSIgeD0iNTkzIiB5PSI5OC4zIi8+DQoJCTxyZWN0IHdpZHRoPSI4IiBoZWlnaHQ9Ijk5LjUiIHg9IjYxOSIgeT0iOTguMyIvPg0KCQk8dGV4dCB4PSI2OTguNSIgeT0iMzAxLjMiPkg8L3RleHQ+DQoJCTx0ZXh0IHg9IjU3MSIgeT0iODUuOCI+TzwvdGV4dD4NCgkJPHRleHQgeD0iMCIgeT0iNTE2LjgiPkhPPC90ZXh0Pg0KCQk8dGV4dCB4PSIzMjIiIHk9IjY2MC44Ij5PQ0g8L3RleHQ+DQoJCTx0ZXh0IHg9IjU0NC4yIiB5PSI2NzkuNSIgY2xhc3M9InNtYWxsIj4zPC90ZXh0Pg0KCTwvZz4NCjwvc3ZnPg==");
+			background-position: center -25%;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			padding-bottom: 50px;
+			background-attachment: fixed;
+		}
+		.splash h1 {
+			margin-top: 0;
+		}
+		.main-content {
+			margin: 50px;
+		}
+		.main-content h1 {
+			text-align: center;
+			font-size: 250%;
+		}
+		section {
+			margin-bottom: 60px;
+		}
+		section h2 {
+			font-size: 300%;
+		}
+		section h3 {
+			font-size: 250%;
+		}
+		/*
+		section:nth-child(odd) {
+			padding-left: 30%
+		}
+		section:nth-child(even) {
+			padding-right: 30%
+		}
+		*/
+		pre {
+			tab-size: 4;
+		    background: #f4f4f4;
+			border: 1px solid #ddd;
+			border-left: 3px solid red;
+			color: #666;
+			page-break-inside: avoid;
+			font-family: monospace;
+			font-size: 15px;
+			line-height: 1.6;
+			margin-bottom: 1.6em;
+			max-width: 100%;
+			overflow: auto;
+			padding: 1em 1.5em;
+			display: block;
+			word-wrap: break-word;
+		}
+		pre.vanilla {
+			border-left: 3px solid #f3e5ab;
+		}
+		.example {
+			display: flex;
+		}
+		.example pre {
+			display: inline-block;
+			width: 50%;
+			margin: 0;
+		}
+		.docs-button {
+			margin: auto;
+			text-align:center;
+			display: block;
+			width: min-content;
+			border: 3px solid #f3e5ab;
+			text-decoration: none;
+			min-width: 12em;
+			padding: 7px 15px;
+			border-radius: 4px;
+			color: #22262e;
+			text-transform: uppercase;
+			font-size: 150%;
+			white-space: nowrap;
+			transition: background 0.5s;
+		}
+		.docs-button:hover {
+			background: #f3e5ab;
+		}
+		.footer {
+			padding: 10px;
+			text-align: center;
+			background-color: #eee;
+		}
+	</style>
+	<body>
+		<div class="splash">
+			<span class="logo-text">V</span>
+			<h1>Vanilla</h1>
+			<h3>A million times faster than jQuery; infinitely smaller than everything.</h3>
+		</div>
+		<div class="main-content">
+			<h1>An established alternative, for the modern environment.</h1>
+			<section>
+			<h2>Why Vanilla?</h2>
+				<p>Created by Brendan Eich in 1995, Vanilla is now a thriving JavaScript library carefully crafted by our <a href="https://github.com/tc39/ecma262">design committee</a>
+				ensuring that developing anything with this library (from websites to command line tools) is a simple, yet pleasant experience, as your options 
+				include (but are not limited to):</p>
+				<ul>
+					<li>accessible module imports and exports</li>
+					<li>a comprehensive low-overhead DOM API</li>
+					<li>an intuitive object-oriented system for custom elements</li>
+					<li>a handy library for processing arrays</li>
+					<li>an highly efficient Regex engine</li>
+					<li>AJAX functionality</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Compatible with any ecosystem</h3>
+				<p>As a first-class citizen of the web, Vanilla does not extend any standard object, let alone the DOM; no monkey-patching in order
+				to see things working, no external technical debt left at the last minute, no lost productivity in exchange. Learn Vanilla once; use it anywhere.</p>
+			</section>
+			<section>
+				<h3>Super lightweight</h3>
+				<p>Our team of developers ensure that every byte of code is essential, as we pride in optimizing our data footprint, 
+				so that your project is only your code, and nothing else. The days of an external 3MB library 
+				dwarfing the index.js are simply over. You can even tweet the unminified embedded library in its entirety:
+				</p>
+			<pre>&lt;script&gt;&lt;/script&gt;</pre>
+			</section>
+			<section>
+				<h3>Blazingly fast</h3>
+				<p>Simply put, we run circles around jQuery. Accessing a document's elements has never been faster, and you don't even have to sacrifice code clarity for speed.</p>
+			</section>
+			<h2>At a Glance*</h2>
+			<span>*Technical limitations means that some Vanilla functionality may not work, due to Internet Explorer</span>
+			<h3>jQuery</h3>
+			<div class="example">
+				<pre>$("selector");</pre>
+				<pre class="vanilla">document.querySelector("selector");</pre>
+			</div>
+			<div class="example">
+				<pre>$$("selector");</pre>
+				<pre class="vanilla">document.querySelectorAll("selector");</pre>
+			</div>
+			<div class="example">
+				<pre>$(el).hide();
+$(el).show()</pre>
+				<pre class="vanilla">el.style.display = 'none';
+el.style.display = '';</pre>
+			</div>
+			<div class="example">
+				<pre>$.getJSON('path', json => {...});</pre>
+				<pre class="vanilla">fetch(path)
+	.then(response => response.json())
+	.then(json => {...});</pre>
+			</div>
+			<div class="example">
+				<pre>$.ajax({
+	type: 'GET',
+	url: path,
+	success: resp => ...,
+	error: () => ...
+});</pre>
+				<pre class="vanilla">fetch(path)
+	.then(resp => ...)
+	.catch(error => ...);</pre>
+			</div>
+			<h3>Underscore.js</h3>
+			<div class="example">
+				<pre>_.compact(array);</pre>
+				<pre class="vanilla">array.filter(Boolean)</pre>
+			</div>
+			<div class="example">
+				<pre>_.concat([array, 1, [2], [[3]]);</pre>
+				<pre class="vanilla">array.concat(1, [2], [[3]]);</pre>
+			</div>
+			<div class="example">
+				<pre>_.filter(array, v => ...);</pre>
+				<pre class="vanilla">array.filter(v => ...);</pre>
+			</div>
+			<div class="example">
+				<pre>_.find(array, v => ...);
+_.findIndex(array, v => ...);
+_.indexOf(array, v);
+_.lastIndexOf(array, v);</pre>
+				<pre class="vanilla">array.find(v => ...);
+array.findIndex(v => ...);
+array.indexOf(v);
+array.lastIndexOf(v);</pre>
+			</div>
+			<div class="example">
+				<pre>_.join(_.reverse(array), ' ');</pre>
+				<pre class="vanilla">array.reverse().join(' ');</pre>
+			</div>
+			<div class="example">
+				<pre>var bound = _.bind(func, this);
+var part = _.partial(func, arg);</pre>
+				<pre class="vanilla">var bound = func.bind(this);
+var part = ...args => func(arg, args)</pre>
+			</div>
+			<h3>Polymer</h3>
+			<a class="docs-button" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Ready to get started?</a>
+		</div>
+		<div class="footer">
+			<p>Made with ❤ in <a href="https://www.ecma-international.org/">Geneva</a>,
+			and the <a href="https://github.com/tc39">rest of the world</a>.
+		</div>
+	</body>
+</html>
