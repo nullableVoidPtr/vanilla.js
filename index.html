@@ -165,16 +165,16 @@
 				<div class="example">
 					<pre>$.getJSON('path', json => {...});</pre>
 					<pre class="vanilla">fetch(path)
-		.then(response => response.json())
-		.then(json => {...});</pre>
+	.then(response => response.json())
+	.then(json => {...});</pre>
 				</div>
 				<div class="example">
 					<pre>$.ajax({
-		type: 'GET',
-		url: path,
-		success: resp => ...,
-		error: () => ...
-	});</pre>
+	type: 'GET',
+	url: path,
+	success: resp => ...,
+	error: () => ...
+});</pre>
 					<pre class="vanilla">fetch(path)
 		.then(resp => ...)
 		.catch(error => ...);</pre>
@@ -196,13 +196,13 @@
 				</div>
 				<div class="example">
 					<pre>_.find(array, v => ...);
-	_.findIndex(array, v => ...);
-	_.indexOf(array, v);
-	_.lastIndexOf(array, v);</pre>
+_.findIndex(array, v => ...);
+_.indexOf(array, v);
+_.lastIndexOf(array, v);</pre>
 					<pre class="vanilla">array.find(v => ...);
-	array.findIndex(v => ...);
-	array.indexOf(v);
-	array.lastIndexOf(v);</pre>
+array.findIndex(v => ...);
+array.indexOf(v);
+array.lastIndexOf(v);</pre>
 				</div>
 				<div class="example">
 					<pre>_.join(_.reverse(array), ' ');</pre>
