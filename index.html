@@ -46,6 +46,10 @@
 			padding-right: 30%
 		}
 		*/
+		summary {
+			font-size: 150%;
+			margin: 0.5em;
+		}
 		pre {
 			tab-size: 4;
 			background: #f4f4f4;
@@ -142,71 +146,75 @@
 			</section>
 			<h2>At a Glance*</h2>
 			<span>*Technical limitations means that some Vanilla functionality may not work, due to Internet Explorer</span>
-			<h3>jQuery</h3>
-			<div class="example">
-				<pre>$("selector");</pre>
-				<pre class="vanilla">document.querySelector("selector");</pre>
-			</div>
-			<div class="example">
-				<pre>$$("selector");</pre>
-				<pre class="vanilla">document.querySelectorAll("selector");</pre>
-			</div>
-			<div class="example">
-				<pre>$(el).hide();
-$(el).show()</pre>
-				<pre class="vanilla">el.style.display = 'none';
-el.style.display = '';</pre>
-			</div>
-			<div class="example">
-				<pre>$.getJSON('path', json => {...});</pre>
-				<pre class="vanilla">fetch(path)
-	.then(response => response.json())
-	.then(json => {...});</pre>
-			</div>
-			<div class="example">
-				<pre>$.ajax({
-	type: 'GET',
-	url: path,
-	success: resp => ...,
-	error: () => ...
-});</pre>
-				<pre class="vanilla">fetch(path)
-	.then(resp => ...)
-	.catch(error => ...);</pre>
-			</div>
-			<h3>Underscore.js</h3>
-			<div class="example">
-				<pre>_.compact(array);</pre>
-				<pre class="vanilla">array.filter(Boolean)</pre>
-			</div>
-			<div class="example">
-				<pre>_.concat([array, 1, [2], [[3]]);</pre>
-				<pre class="vanilla">array.concat(1, [2], [[3]]);</pre>
-			</div>
-			<div class="example">
-				<pre>_.filter(array, v => ...);</pre>
-				<pre class="vanilla">array.filter(v => ...);</pre>
-			</div>
-			<div class="example">
-				<pre>_.find(array, v => ...);
-_.findIndex(array, v => ...);
-_.indexOf(array, v);
-_.lastIndexOf(array, v);</pre>
-				<pre class="vanilla">array.find(v => ...);
-array.findIndex(v => ...);
-array.indexOf(v);
-array.lastIndexOf(v);</pre>
-			</div>
-			<div class="example">
-				<pre>_.join(_.reverse(array), ' ');</pre>
-				<pre class="vanilla">array.reverse().join(' ');</pre>
-			</div>
-			<div class="example">
-				<pre>var bound = _.bind(func, this);
-var part = _.partial(func, arg);</pre>
-				<pre class="vanilla">var bound = func.bind(this);
-var part = ...args => func(arg, args)</pre>
-			</div>
+			<details>
+				<summary>jQuery</summary>
+				<div class="example">
+					<pre>$("selector");</pre>
+					<pre class="vanilla">document.querySelector("selector");</pre>
+				</div>
+				<div class="example">
+					<pre>$$("selector");</pre>
+					<pre class="vanilla">document.querySelectorAll("selector");</pre>
+				</div>
+				<div class="example">
+					<pre>$(el).hide();
+	$(el).show()</pre>
+					<pre class="vanilla">el.style.display = 'none';
+	el.style.display = '';</pre>
+				</div>
+				<div class="example">
+					<pre>$.getJSON('path', json => {...});</pre>
+					<pre class="vanilla">fetch(path)
+		.then(response => response.json())
+		.then(json => {...});</pre>
+				</div>
+				<div class="example">
+					<pre>$.ajax({
+		type: 'GET',
+		url: path,
+		success: resp => ...,
+		error: () => ...
+	});</pre>
+					<pre class="vanilla">fetch(path)
+		.then(resp => ...)
+		.catch(error => ...);</pre>
+				</div>
+			</details>
+			<details>
+				<summary>Underscore.js</summary>
+				<div class="example">
+					<pre>_.compact(array);</pre>
+					<pre class="vanilla">array.filter(Boolean)</pre>
+				</div>
+				<div class="example">
+					<pre>_.concat([array, 1, [2], [[3]]);</pre>
+					<pre class="vanilla">array.concat(1, [2], [[3]]);</pre>
+				</div>
+				<div class="example">
+					<pre>_.filter(array, v => ...);</pre>
+					<pre class="vanilla">array.filter(v => ...);</pre>
+				</div>
+				<div class="example">
+					<pre>_.find(array, v => ...);
+	_.findIndex(array, v => ...);
+	_.indexOf(array, v);
+	_.lastIndexOf(array, v);</pre>
+					<pre class="vanilla">array.find(v => ...);
+	array.findIndex(v => ...);
+	array.indexOf(v);
+	array.lastIndexOf(v);</pre>
+				</div>
+				<div class="example">
+					<pre>_.join(_.reverse(array), ' ');</pre>
+					<pre class="vanilla">array.reverse().join(' ');</pre>
+				</div>
+				<div class="example">
+					<pre>var bound = _.bind(func, this);
+	var part = _.partial(func, arg);</pre>
+					<pre class="vanilla">var bound = func.bind(this);
+	var part = ...args => func(arg, args)</pre>
+				</div>
+			</details>
 			<a class="docs-button" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Ready to get started?</a>
 		</div>
 		<div class="footer">
